@@ -1,0 +1,4 @@
+<%= @teacher.name %>
+<br>
+<%= link_to "#{@teacher.name}'s students", teacher_students_path(@teacher) %>
+<%= link_to "Make a new student", new_teacher_student_path(@teacher) %>

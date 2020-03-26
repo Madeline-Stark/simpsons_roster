@@ -1,0 +1,16 @@
+make a new students:
+
+
+
+<%= form_for(@student) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= render partial: 'form', locals: {f: f} %>
+
+    <%= f.submit %>
+<% end %>
+
+def form_partial(local)
+    <%= form_for(local) 
+end
